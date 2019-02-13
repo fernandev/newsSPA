@@ -1,16 +1,33 @@
 {
-  "name": "newsspa",
-  "version": "1.0.0",
+  "name": "news-spa",
+  "version": "0.1.0",
   "description": "A Single-Page-Application developed in React-Native consuming my \"newsAPI\"-project API.",
-  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts": "2.1.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
     "url": "git+https://mfernandev@bitbucket.org/mfernandev/newsspa.git"
   },
-  "author": "",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "author": "fernandev",
   "license": "ISC",
   "homepage": "https://bitbucket.org/mfernandev/newsspa#readme"
 }

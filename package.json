@@ -1,0 +1,16 @@
+{
+  "name": "newsspa",
+  "version": "1.0.0",
+  "description": "A Single-Page-Application developed in React-Native consuming my \"newsAPI\"-project API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mfernandev@bitbucket.org/mfernandev/newsspa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mfernandev/newsspa#readme"
+}

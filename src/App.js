@@ -1,28 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
+import ReactObserver from 'react-event-observer';
+
+
 import './App.css';
 
+import MainNewsComponent from './components/MainNewsComponent/MainNewsComponent';
+import MostPopularNewsComponent from './components/MostPopularNewsComponent/MostPopularNewsComponent';
+
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	constructor() {
+		super();
+		this.observer = ReactObserver();
+
+		this.darkModeClassList = {
+			true: 'dark',
+			false: 'light'
+		};
+
+		this.state = {
+			accessibilityClass: this.darkModeClassList[(localStorage.getItem('prefersNightMode') === 'true')]
+		};
+	}
+
+	componentDidMount() {
+		this.observer.subscribe('nightModeToggle', enabled => {
+			this.setState({
+				accessibilityClass: this.darkModeClassList[enabled]
+			});
+		});
+	}
+
+	componentWillUnmount() {
+		this.observer.unsubscribe('nightModeToggle');
+	}
+
+	render() {
+		return (
+			<Fragment>
+				<MainNewsComponent observer={this.observer} accessibilityClass={this.state.accessibilityClass}/>
+				<MostPopularNewsComponent observer={this.observer} accessibilityClass={this.state.accessibilityClass}/>
+			</Fragment>
+		);
+	}
 }
 
 export default App;

@@ -1,0 +1,23 @@
+/*Main section defaults*/
+main {
+	font-size: 15px;
+	display: inline-block;
+	width: 65.28%;
+	height: 100%;
+	overflow-y: scroll;
+	margin-right: 0px;
+}
+
+main.light {
+
+}
+
+main.dark {
+	background-color: #7FC4FD;
+}
+
+div.page-header {
+	position: relative;
+	height: 11.2%;
+	z-index: 1;
+}

@@ -1,0 +1,44 @@
+div.alert {
+	padding: 20px;
+	color: white;
+	margin-bottom: 15px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+div.alert.hidden {
+	display: none;
+}
+
+div.alert.success {
+	background-color: #4CAF51;
+}
+
+div.alert.error {
+	background-color: #f44338;
+}
+
+div.alert.warn {
+	background-color: #ff9801;
+}
+
+div.alert.info {
+	background-color: #2196F3;
+}
+
+span.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: black;
+}

@@ -1,0 +1,39 @@
+/*NEWS Heading and it's rule*/
+h1.page-title {
+	text-transform: uppercase;
+	position: relative;
+	font-size: 2em;
+}
+
+h1.page-title.light {
+	color: #2699FB;
+}
+
+h1.page-title.dark {
+	color: #FFFFFF;
+}
+
+h1.page-title::after {
+	content: "";
+	position: absolute;
+	right: 0%;
+	height: 2px;
+	width: 85.4%;
+	top: 50%;
+	background: #F1F9FF;
+}
+
+
+/*Main News Wrapper*/
+main > div.content-box {
+	margin: 1em 3em;
+	width: 88.9%;
+	padding: 0px 50px;
+	margin: 0px;
+}
+
+main > div.content-box:after {
+	content: "";
+	display: table;
+	clear: both;
+}

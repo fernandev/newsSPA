@@ -1,0 +1,16 @@
+aside {
+	font-size: 13px;
+	width: 34.7%;
+	display: inline;
+	height: 100%;
+	overflow-y: scroll;
+	float: right;
+}
+
+aside.light {
+	background-color: #F1F9FF;
+}
+
+aside.dark {
+	background-color: #BCE0FD;
+}

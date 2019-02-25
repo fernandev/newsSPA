@@ -1,0 +1,150 @@
+main > div > section.news-content {
+	/*display: inline-block;
+	vertical-align: top;
+	width: 47.4%;
+	margin: 0% 0% 2.5% 4.69%;*/
+	position: relative;
+	height: 433px;
+	float: left;
+	width: 47.4%;
+	margin-bottom: 10px;
+}
+
+main > div > section.news-content:nth-child(even) {
+	margin-right: 2.55%;
+}
+
+main > div > section.news-content:nth-child(odd) {
+	margin-left: 2.523%;
+}
+
+/* News Card link*/
+section.news-content > a {
+	text-decoration: none;
+}
+
+div.news-heading {
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+div.news-img {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+p.news-popularity {
+	font-size: 0.9333333333333333em;
+	font-weight: bold;
+	color: #2699FB;
+	margin: 0px;
+	position: absolute;
+	bottom: 6%;
+	right: 4.7%;
+}
+
+p.news-popularity > i {
+	padding-right: 8px;
+}
+
+/*News title*/
+h1.news-title {
+	margin-top: 30px;
+	height: 60px;
+	font-size: 1.3333333333333333em;
+	color: #2699FB;
+}
+
+/*News description*/
+h2.news-description {
+	font-size: 0.9333333333333333em;
+	margin-top: 10px;
+	height: 67px;
+	color: #2699FB;
+}
+
+div.news-footer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+div.news-data {
+	display: inline-block;
+	padding-right: 1.5em;
+	font-size: 0.9333333333333333em;
+	color: #2699FB;
+}
+
+div.news-data > span {
+	padding-left: 10px;
+}
+
+aside > * > div.news-heading {
+	height: 200px;
+}
+
+aside > section > div.news-body > h1.news-title {
+	height: 9.98%;
+	margin-top: 8.5%;
+	margin-bottom: 3%;
+}
+
+section.news-content.side-bar {
+	display: inline-block;
+	vertical-align: top;
+	width: 70.5%;
+	height: 310px;
+	position: relative;
+	margin: 40px 14.5% 0px 14.5%;
+}
+
+section.news-content.side-bar:first-child {
+	margin-top: 100px;
+}
+
+h1.news-title.dark {
+	color: #FFFFFF;
+}
+
+h1.news-title.light {
+	color: #2699FB;
+}
+
+h1.news-title.side-bar {
+	height: 40px;
+	margin-bottom: 0px;
+}
+
+h2.news-description.dark {
+	color: #FFFFFF;
+}
+
+h2.news-description.light {
+	color: #2699FB;
+}
+
+h2.news-description.side-bar {
+	height: 40px;
+	margin: 10px 0px 0px 0px;
+}
+
+div.news-data.dark > span {
+	color: #FFFFFF;
+}
+
+div.news-data.light > span {
+	color: #2699FB;
+}
+
+div.news-img.dark {
+	background-color: #BCE0FD;
+}
+
+div.news-img.light, div.news-img.side-bar {
+	background-color: #7FC4FD;
+}

@@ -1,0 +1,8 @@
+div.back-button {
+	padding: 20px;
+	margin-bottom: 15px;
+	position: sticky;
+	top: 0;
+	width: auto;
+	z-index: 2;
+}
